@@ -1,18 +1,16 @@
 var name = $(".name").val();
-var ne = document.getElementById("#new");
-var little = $("input:radio[name=experience]:checked").val();
-var intermediate = $("input:radio[name=experience]:checked").val();
-var expert = $("input:radio[name=experience]:checked").val();
+// var experience = $("input, #1");
+// var howa = $("input, #2");
 
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     $(".jumbotron").hide("slow");
     $("#showSurvey").show();
-    if (ne.checked) {
-      alert("you are new to this");
+    if (document.getElementById('1').checked) {
+      alert("hello");
     }
-    else if (".2".checked) {
-      alert("you can learn");
+    else if (document.getElementById('2').checked) {
+      alert("spaghetti");
     }
     else {
       alert("error");
