@@ -3,10 +3,10 @@
 }
 #showSurvey {
   margin-top: 10px;
-  display: none;
 }
 .jumbotron {
   background-color: black;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: none;
 }
