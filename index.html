@@ -10,12 +10,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>What Track Should You Take? Find Out!</h1>
+      <h1 style="text-align:center;">What Track Should You Take? Find Out!</h1>
       <form id="name">
         <div class="form-group">
           <label for="name">Enter your name here.</label>
           <input id="name" size="20" class="form-control" type="text" placeholder="Name Here">
-          <label for="experience">What is your current experience with programming?</label>
+        </div>
+        <div class="radio">
+          <h3>What is your current level of experience with programing?</h3>
+          <label>
+            <input type="radio" name="experience" value="none" checked>Brand New
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="none" checked>I've Played around with it a little bit
+          </label>
         </div>
       </form>
     </div>
