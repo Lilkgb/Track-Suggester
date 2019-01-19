@@ -9,14 +9,15 @@ $(document).ready(function() {
       $("#introToProgram").show("slow");
     }
     else if (document.getElementById('little').checked) {
-      alert("spaghetti");
+      $("#littleExperience").show("slow");
     }
     else if (document.getElementById("intermediate").checked) {
-      alert("wahoo")
+      $("#intermediateExperience").show("slow");
     }
     else if (document.getElementById("advance").checked) {
-      alert("oh yes!!!")
+      $("#advanceExperience").slideDown("slow");
     }
+    // else if (document.getElementById("intermediate")
     else {
       alert("error");
     }
@@ -27,5 +28,8 @@ $(document).ready(function() {
     $(".jumbotron").show("slow");
     $("#showSurvey").hide();
     $("#introToProgram").hide();
+    $("#littleExperience").hide();
+    $("#intermediateExperience").hide();
+    $("#advanceExperience").hide();
   });
 });
