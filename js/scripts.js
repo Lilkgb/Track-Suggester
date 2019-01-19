@@ -1,7 +1,8 @@
-var name = $(".name").val();
 
 $(document).ready(function() {
   $("#survey").submit(function(event) {
+    var name = $("#name").val();
+    $(".nameEnter").text(name);
     $(".jumbotron").hide("slow");
     $("#showSurvey").show();
     if (document.getElementById('new').checked) {
