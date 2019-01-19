@@ -1,16 +1,20 @@
 var name = $(".name").val();
-// var experience = $("input, #1");
-// var howa = $("input, #2");
 
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     $(".jumbotron").hide("slow");
     $("#showSurvey").show();
-    if (document.getElementById('1').checked) {
-      alert("hello");
+    if (document.getElementById('new').checked) {
+      $("#introToProgram").show("slow");
     }
-    else if (document.getElementById('2').checked) {
+    else if (document.getElementById('little').checked) {
       alert("spaghetti");
+    }
+    else if (document.getElementById("intermediate").checked) {
+      alert("wahoo")
+    }
+    else if (document.getElementById("advance").checked) {
+      alert("oh yes!!!")
     }
     else {
       alert("error");
@@ -21,5 +25,6 @@ $(document).ready(function() {
   $("#showSurvey").click(function() {
     $(".jumbotron").show("slow");
     $("#showSurvey").hide();
+    $("#introToProgram").hide();
   });
 });
