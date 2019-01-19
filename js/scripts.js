@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   $("#survey").submit(function(event) {
     var name = $("#name").val();
@@ -17,7 +16,6 @@ $(document).ready(function() {
     else if (document.getElementById("advance").checked) {
       $("#advanceExperience").slideDown("slow");
     }
-    // else if (document.getElementById("intermediate")
     else {
       alert("error");
     }
